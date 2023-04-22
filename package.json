@@ -4,7 +4,8 @@
   "description": "My Final Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
   },
   "dependencies": {
     "@next/font": "^13.0.3",
