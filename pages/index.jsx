@@ -15,8 +15,8 @@ export default function Home() {
 
         <main>
             <div>
-            <h1>Welcome to Foodie</h1>;
-            <Link href="/recipes"><a>View Recipes</a></Link>
+            <h1>Welcome to Foodie</h1>
+            <Link href="/recipes" className="button">View Recipes</Link>
             </div>
         </main>
       </>
