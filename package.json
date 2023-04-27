@@ -12,7 +12,7 @@
     "mysql:restart": "npm run mysql:stop; npm run mysql:start",
     "mysql:start": "export FLAG=-d && npm run mysql:run",
     "mysql:start:log": "export FLAG=-it && npm run mysql:run",
-    "mysql:run": "docker run $FLAG --rm -p 3306:3306 -v $(pwd)/db/schema:/docker-entrypoint-initdb.d --name=mysql-sandbox -e MYSQL_ALLOW_EMPTY_PASSWORD=root -e MYSQL_DATABASE=$DB_NAME mysql:8.0.30 mysqld --authentication_policy=mysql_native_password",
+    "mysql:run": "docker run $FLAG --rm -p 3306:3306 -v $(pwd)/db/schema:/docker-entrypoint-initdb.d --name=mysql-sandbox -e MYSQL_ALLOW_EMPTY_PASSWORD=root -e MYSQL_DATABASE=$DB_NAME mysql:8 mysqld --authentication_policy=mysql_native_password",
     "mysql:stop": "docker container stop mysql-sandbox",
     "mysql:shell": "docker exec -it mysql-sandbox mysql",
     "mysql:check": "until docker exec mysql-sandbox mysql -e \"use $DB_NAME; show tables;\"; do echo ...; sleep 1; done"
