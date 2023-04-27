@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE collection (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   recipe_id INT NOT NULL,
   user_id INT NOT NULL,
