@@ -1,0 +1,7 @@
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    padding-top: calc(var(--space) * 8);
+  }
