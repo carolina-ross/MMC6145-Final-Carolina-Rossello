@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .icon {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recipeOfTheDay {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .recipeOfTheDayTitle {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  
+  .recipeImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .recipeTitle {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .searchButton {
+    background-color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #031B2D;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .searchButton:hover {
+    opacity: 0.9;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .recipeOfTheDay {
+      width: 70%;
+    }
+  }
+

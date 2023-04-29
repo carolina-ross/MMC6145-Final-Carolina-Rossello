@@ -1,14 +1,21 @@
-import { useRouter } from 'next/router'
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { destroySession } from "iron-session";
 
-export default function() {
-  const router = useRouter()
-  return async function handleLogout() {
+export default function useLogout() {
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+
+  const logout = async () => {
+    setIsLoading(true);
     try {
-      const res = await fetch('/api/auth/logout', {method: 'POST'})
-      if (res.status === 200)
-        router.push('/')
-    } catch(err) {
-      console.log(err)
+      await destroySession();
+      router.replace("/"); // redirect to the home page after logout
+    } catch (error) {
+      console.error(error);
     }
-  }
+    setIsLoading(false);
+  };
+
+  return { isLoading, logout };
 }

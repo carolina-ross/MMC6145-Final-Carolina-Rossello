@@ -1,0 +1,124 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+  color: #d51111;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.form h2 {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.form button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  color: #031B2D;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.photo {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.photo input[type="file"] {
+  position: absolute;
+  bottom: 0;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.userInfo {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.collectionButton {
+  background-color: #FFFFFF;    
+  border: none;
+  border-radius: 5px;
+  color: 031B2D;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logoutButton {
+  background-color: #FFFFFF;    
+  border: none;
+  border-radius: 5px;
+  color: 031B2D;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.collectionButton, .logoutButton {
+  opacity: 0.9;
+}
+
+.memberText {
+  color: #ffffff;
+  padding: 16px 0px 0px 0px;
+  font-size: 24px;
+}
+
+.signInButton {
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  color: #031B2D;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}

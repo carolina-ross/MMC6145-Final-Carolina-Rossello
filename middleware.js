@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { getIronSession } from "iron-session/edge";
 import sessionOptions from './config/session'
+import { useRouter } from 'next/router'
 
 export async function middleware(req) {
   const res = NextResponse.next();
@@ -16,5 +17,5 @@ export async function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/collection", "/profile"]
+  matcher: ["/collections"]
 }
